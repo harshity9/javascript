@@ -6,4 +6,11 @@ console.log(myDate.toLocaleString())
 // console.log(typeof(myDate))
 
 let myNewDate = Date.now()
-console.log(myNewDate);
+console.log(Math.floor(myNewDate/1000));
+
+console.log(myDate.toLocaleDateString('default', {
+    era: "narrow",
+    weekday: "long",
+    timeZone: "IST"
+    hour:"2-digit"
+}))
