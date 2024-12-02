@@ -32,3 +32,4 @@ console.log(array3)
 const arr2 = [...array0, ...array1, ...array2]
 console.log(arr2)
 
+
