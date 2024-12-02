@@ -10,9 +10,19 @@ const obj = {
 }
 console.log(obj["email"])
 
-obj.name = ("345543543")
+obj.name = ("ranodm1")
 
-Object.freeze(obj)
-obj.name = ("dsuhncsukj")
+// Object.freeze(obj)
+// obj.name = ("dsuhncsukj")
 
-console.log(obj)
+// console.log(obj)
+const today = new Date()
+const livetime = today.toLocaleString('default',{
+    timeZone: 'IST'
+})
+
+obj.date = function(){
+    console.log(`Hello there, I am ${this.name} and live time is ${livetime}`)
+}
+
+console.log(obj.date())
