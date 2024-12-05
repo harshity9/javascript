@@ -6,3 +6,7 @@
 // }
 //     console.log(element)
 // }
+for (let i = 1; i <= 10; i++) {
+    const element = i*i;
+    console.log((i*i)+(i))
+    }
