@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(93, 93, 45);
+}
+.one{
+    margin:auto;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+}
+
+.button{
+    background-color: aqua;
+    min-height: 60px;
+    min-width: 60px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Yellow{
+    background-color: yellow;
+}
+
+#Red{
+    background-color: red;
+}
+#Green{
+    background-color: green;
+}
+#Black{
+    background-color: white;
+}
+#Orange{
+    background-color: orange;
+}
+#Brown{
+    background-color: brown;
+}
+#Grey{
+    background-color: grey;
+}
+#Blue{
+    background-color: blue;
+}
