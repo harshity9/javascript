@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+</head>
+<body>
+    <h3 id="head">
+        Click Start to continuosly change colors.
+<br>
+        Click Stop to Stop
+   
+    </h3>
+    <button id="start">
+        Start
+    </button>
+    <button id="stop">
+        Stop
+    </button>
+</body>
+<script>
+    const randomColors = function(){
+        const hex = '123456789ABCDEF'
+        let colors = '#'
+        for (let i = 0; i < 6; i++) {
+        
+            colors += hex[Math.floor(Math.random() * 15)]
+           }
+           return colors
+    }  
+    console.log(randomColors())
+;
+</script>
+</html>
