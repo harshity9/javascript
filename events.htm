@@ -3,35 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>javascript events</title>
+    <title>Evennts in JS</title>
 </head>
 <body>
-    <ul id="1"> Javascript events 1</ul>
-    <ul id="2" onclick="alert('clicked 2')">event 2 </ul>
-    <ul id="3" onclick="console.log('clicked 3')">event 3</ul>
-    <ul id="4">event 4 
-        <li>4a</li>
-        <li id="4b">4b</li>
-        <li>4c</li>
-        <li>4d</li>
+    <ul id="list1" onclick="alert('clicked on List 1')">List 1</ul>
+    <ul id="list2">List 2
+        <li>2a</li>
+        <li id="2b">2b</li>
+        <li>2c</li>
+        <li>2d</li>
     </ul>
-    <ul id="5">event 5</ul>
+    <ul id="list3">List 3</ul>
+    <ul id="list4">List 4</ul>
+    <ul id="list5">List 5</ul>
+    
 </body>
 <script>
-    // document.getElementById('4').onmouseover=function(){
-    //     console.log('hovered over 4')
+    // document.getElementById('list3').onclick = function(){
+    //     console.log('clciked on list 3')
     // }
-    // document.getElementById('4').addEventListener('click',function(){
-    //     console.log('clicked on 4')
-    // },false);
+    document.getElementById('list5').addEventListener('click', function(){
+        console.log('clicked on list 5')
+    }, false)
 
-    document.getElementById('4b').addEventListener('click', function(e){
-        // console.log('clicked over 4b')
-      let removeit = (e.target.parentNode)
-        removeit.remove()
+    document.getElementById('list2').addEventListener('click', function(){
+        console.log('clicked on List 2')
     },false)
 
-    
-    
+    document.getElementById('2b').addEventListener('click', function(e){
+        console.log('clicked on List 2- 2b')
+        document.getElementById('2b').remove();
+        e.stopPropagation()
+    },false)
+
+
+
 </script>
 </html>
