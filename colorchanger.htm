@@ -20,7 +20,12 @@
     </button>
 </body>
 <script>
-    const randomColors = function(){
+
+    document.getElementById('start').addEventListener('click',
+        function(){
+         const changecolor = setInterval(function(){
+
+        const randomColors = function(){
         const hex = '123456789ABCDEF'
         let colors = '#'
         for (let i = 0; i < 6; i++) {
@@ -29,7 +34,17 @@
            }
            return colors
     }  
-    console.log(randomColors())
+    
+    document.querySelector('body').style.backgroundColor = randomColors()     
+          },1000)
+
+    document.getElementById('stop').addEventListener('click', function(){
+        clearInterval(changecolor)
+    })
+        }
+    )
+
+
 ;
 </script>
 </html>
