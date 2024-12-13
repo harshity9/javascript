@@ -7,11 +7,26 @@
 </head>
 <body>
     <h1 id="head">
-    Stopwatch    
+    console log
     </h1>
+    <button id="start">
+        Start
+    </button>
+    <button id="stop">stop</button>
 </body>
     <script>
-  
 
-    </script>
+       
+       document.getElementById('start').addEventListener('click', function(){
+    
+        const hello = setInterval(function() {
+            console.log('Hello')
+        }, 1000);
+    
+              document.getElementById('stop').addEventListener('click',function(){
+            clearInterval(hello)
+       })
+       })
+
+  </script>
 </html>
